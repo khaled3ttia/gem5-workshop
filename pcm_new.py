@@ -66,7 +66,7 @@ SimpleOpts.set_usage("usage: %prog [options] <binary to execute>")
 isa = str(m5.defines.buildEnv['TARGET_ISA']).lower()
 
 # Default to running 'hello', use the compiled ISA to find the binary
-binary = 'tests/test-progs/hello/bin/' + isa + '/linux/rb_tree.o'
+#binary = 'tests/test-progs/hello/bin/' + isa + '/linux/rb_tree.o'
 #binary = '~/Sexain-MemController/benchmarks/hash_table.o' 
 
 # Check if there was a binary passed in via the command line and error if
@@ -85,7 +85,7 @@ bin_input1 = args[1]
 bin_input2 = args[2]
 '''
 #ORIGINAL : REVERT BACK when DONE 
-binary = 'tests/test-progs/hello/bin/' + isa +'/linux/' + binary 
+#binary = 'tests/test-progs/hello/bin/' + isa +'/linux/' + binary 
 
 #binary = 'tests/test-progs/hello/bin/' + isa + '/linux/mcf_test/' + binary 
 
